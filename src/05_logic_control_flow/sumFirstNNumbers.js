@@ -8,8 +8,14 @@
  * If n is negative, your function should return 0.
  **/
 function sumFirstNNumbers(n) {
-    // Your code here
+  let sum = 0
+
+  while (n >= 1) {
+    sum = sum + n
+    n--
+  }
+
+  return sum
 }
 
-
-module.exports = sumFirstNNumbers;
+module.exports = sumFirstNNumbers

@@ -6,7 +6,14 @@
  * @returns {Array}
  */
 function reverseArray(arr) {
-    // Your code here
+  // Your code here
+  let reversedArr = []
+
+  for (i = 0; i < arr.length; i++) {
+    reversedArr.push(arr[arr.length - 1 - i])
+  }
+
+  return reversedArr
 }
 
-module.exports = reverseArray;
+module.exports = reverseArray
